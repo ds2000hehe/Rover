@@ -2,6 +2,9 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="robot">
 
     <xacro:include filename="robot.xacro" />
+    <xacro:include filename="$(find rover_description)/ros2_control/ros2_control.xacro"/>
 
+
+    <xacro:rover_ros2_control name="RoverSystem"/>
 
 </robot>
